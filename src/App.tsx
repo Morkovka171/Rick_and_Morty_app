@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import 'normalize.css';
 
 const App = () => {
   return (
-    <div>
-      <h3>AБОБА</h3>
-    </div>
+    <>
+      <Header />
+      <Home />
+    </>
   );
-}
+};
 
 export default App;
