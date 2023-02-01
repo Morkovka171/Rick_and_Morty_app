@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
       {characters.map((obj) => (
-        <div>{obj.name}</div>
+        <div key={obj.id}>{obj.name}</div>
       ))}
     </>
   );
