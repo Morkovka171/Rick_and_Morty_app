@@ -1,7 +1,7 @@
 type CharacterType = {
   id: number;
   name: string;
-  status: string;
+  status: "Dead" | "Alive" | "unknown"; 
   species: string;
   type: string;
   gender: string;

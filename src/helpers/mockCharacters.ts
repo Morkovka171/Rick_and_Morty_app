@@ -1,4 +1,6 @@
-export const mockCharacters = [
+import CharacterType from "../types/CharactersTypes";
+
+export const mockCharacters: CharacterType[] = [
     {
       id: 1,
       name: "Rick Sanchez",

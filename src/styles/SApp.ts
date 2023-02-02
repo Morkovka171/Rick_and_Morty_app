@@ -11,7 +11,9 @@ const Container = styled.div`
   position: relative;
   padding: 135px 70px 70px 70px;
   background: #fff;
-  border-radius: 20px;
+  border-radius: 15px;
+  width: 80%;
+  margin: 0 auto;
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export
