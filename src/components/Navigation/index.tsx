@@ -13,7 +13,7 @@ const Navigation = () => {
         {routes
           .filter((route) => route.url !== favoriteRoute)
           .map((route) => (
-            <Link to={route.url}>
+            <Link key={route.url} to={route.url}>
               <SNavigation.ListItem active={route.url === currentUrl}>{route.name}</SNavigation.ListItem>
             </Link>
           ))}
