@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "../../fonts/index.css";
 
 const Nav = styled.nav``;
 const List = styled.ul`
@@ -10,7 +11,7 @@ const List = styled.ul`
   }
 `;
 const ListItem = styled.li<{ active?: boolean }>`
-  font-family: Nunito-SemiBold, sans-serif;
+  font-family: "Nunito-SemiBold", sans-serif;
   list-style: none;
   font-size: 17px;
   color: #712097;

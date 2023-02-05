@@ -31,7 +31,7 @@ export const slides: SliderType[] = [
     position: {
       top: "70%",
       bottom: "unset",
-      left: "29%",
+      left: "32%",
       right: "unset",
     },
   },

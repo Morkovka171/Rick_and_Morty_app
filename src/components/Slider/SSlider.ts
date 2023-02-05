@@ -58,6 +58,7 @@ const Navigation = styled.button<{active: boolean}>`
   height: 21px;
   width: 21px;
   border-radius: 20px;
+  cursor: pointer;
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export

@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   position: relative;
-  padding: 135px 70px 70px 70px;
+  padding: 135px 70px 20px 70px;
   background: #fff;
   border-radius: 15px;
   width: 80%;

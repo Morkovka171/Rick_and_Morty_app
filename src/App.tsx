@@ -8,6 +8,7 @@ import Characters from "./pages/Characters/Characters";
 import Locations from "./pages/Locations";
 import Episodes from "./pages/Episodes";
 import Favorites from "./pages/Favorites";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/episodes" element={<Episodes />} />
           <Route path="/favorites" element={<Favorites />} />
         </Routes>
+        <Footer />
       </SApp.Container>
     </SApp.Wrapper>
   );

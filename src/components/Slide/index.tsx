@@ -15,7 +15,7 @@ const Slide = ({
     <SSlide.Wrapper bgImage={bgImage}>
       <SSlide.Content bg={bg} position={position}>
         <SSlide.Text textColor={textColor}>{text}</SSlide.Text>
-        <SSlide.AText aTextColor={aTextColor}>{aText}</SSlide.AText>
+        <SSlide.AText aTextColor={aTextColor} href={aHref}>{aText}</SSlide.AText>
       </SSlide.Content>
     </SSlide.Wrapper>
   );

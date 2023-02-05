@@ -3,7 +3,6 @@ import "../../fonts/index.css";
 import SliderType from "../../types/SliderType";
 
 const Wrapper = styled.div<{ bgImage: string }>`
-  /* width: 100%; */
   height: 500px;
   border-radius: 20px;
   background-image: url(${(props) => props.bgImage});
@@ -11,19 +10,20 @@ const Wrapper = styled.div<{ bgImage: string }>`
   background-repeat: no-repeat;
   background-position: 50%;
   position: relative;
+  cursor: pointer;
 `;
 
-const Content = styled.div<{ position: SliderType["position"], bg: string }>`
+const Content = styled.div<{ position: SliderType["position"]; bg: string }>`
   position: absolute;
   top: ${(props) => props.position.top};
   bottom: ${(props) => props.position.bottom};
   left: ${(props) => props.position.left};
   right: ${(props) => props.position.right};
   display: flex;
-  align-items:center;
+  align-items: center;
   flex-direction: column;
-  justify-content:center;
-  text-align:center;
+  justify-content: center;
+  text-align: center;
   font-size: 35px;
   font-family: "Nunito-ExtraBold", sans-serif;
   background-color: ${(props) => props.bg};
@@ -36,7 +36,12 @@ const Text = styled.span<{ textColor: string }>`
 `;
 const AText = styled.a<{ aTextColor: string }>`
   color: ${(props) => props.aTextColor};
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
+  &:hover {
+    color: #AD40E0;
+  }
 `;
 
 // eslint-disable-next-line import/no-anonymous-default-export

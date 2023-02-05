@@ -18,7 +18,13 @@ const Wrapper = styled.div`
   background-color: #faf6f6;
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
 `;
 
 const Name = styled.span`
@@ -40,6 +46,7 @@ const Name = styled.span`
 const Img = styled.img`
   border-radius: 10px;
   margin-bottom: 20px;
+  width: 95%;
 `;
 
 const WrapperContent = styled.div`
