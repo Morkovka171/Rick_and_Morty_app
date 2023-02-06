@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 30px 70px 30px 70px;
+  padding: 30px 120px 30px 120px;
 `;
 
 const Text = styled.span`

@@ -10,6 +10,10 @@ import Episodes from "./pages/Episodes";
 import Favorites from "./pages/Favorites";
 import Footer from "./components/Footer";
 
+const handleClick = () => {
+  window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+};
+
 const App = () => {
   return (
     <SApp.Wrapper>
@@ -24,6 +28,11 @@ const App = () => {
         </Routes>
         <Footer />
       </SApp.Container>
+      <SApp.ScrollButton
+        onClick={handleClick}
+        src="/assets/portal.png"
+        alt="page_up"
+      ></SApp.ScrollButton>
     </SApp.Wrapper>
   );
 };

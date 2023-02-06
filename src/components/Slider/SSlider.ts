@@ -52,8 +52,8 @@ const NavigationWrapper = styled.div`
   gap: 10px;
 `;
 
-const Navigation = styled.button<{active: boolean}>`
-  background-color: ${props => props.active ? '#C67BEA' : '#f0e7ff'};
+const Navigation = styled.button<{ active: boolean }>`
+  background-color: ${(props) => (props.active ? "#C67BEA" : "#f0e7ff")};
   border: none;
   height: 21px;
   width: 21px;

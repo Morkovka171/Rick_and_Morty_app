@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   background: #faf6f6;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
-  margin: 70px auto 110px auto;
+  margin: 70px auto 30px auto;
   padding: 30px;
   font-family: "Nunito-SemiBold", sans-serif;
 
