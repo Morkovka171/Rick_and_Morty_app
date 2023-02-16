@@ -1,4 +1,4 @@
-export function findMostFrequentElement(arr: string[]): string[] {
+export function findMostFrequentElement(arr: string[]): string {
     const frequencyMap: { [key: string]: number } = {};
   
     for (let i = 0; i < arr.length; i++) {
@@ -21,15 +21,13 @@ export function findMostFrequentElement(arr: string[]): string[] {
         mostFrequentElements.push(element);
       }
     }
-  
-    return mostFrequentElements;
+    
+    return mostFrequentElements[0];
   }
 
                                 //   prevArr, questionIndex, questionCharacter
   export function createMutatedArray(arr: Array<any>, index: number, value: any) {
-    console.log(arr)
-    console.log(index)
-    console.log(value)
-
     return [...arr.slice(0, index), value, ...arr.slice(index + 1)];
   }
+
+

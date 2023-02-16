@@ -3,7 +3,6 @@ import SQuizRezults from "./SQuizResults";
 import ResultsType from "../../types/ResultsType";
 
 const QuizRezults: React.FC<ResultsType & any> = ({
-  id,
   resetQuiz,
   image,
   name,

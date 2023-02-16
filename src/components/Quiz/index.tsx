@@ -15,9 +15,6 @@ const Quiz = () => {
     Array(questions.length).fill("")
   );
 
-  console.log(
-    findMostFrequentElement(currentAnswers)
-    )
 
   const startQuiz = () => setCurrentQuestionIndex(0);
   const resetQuiz = () => setCurrentQuestionIndex(null);
@@ -45,9 +42,11 @@ const Quiz = () => {
           />
         )}
       {currentQuestionIndex === questions.length && (
-        <QuizRezults resetQuiz={resetQuiz} {...results[0]} />
+        <QuizRezults 
+          resetQuiz={resetQuiz} 
+          {...results.find(result => result.id === findMostFrequentElement(currentAnswers) || results[0])} 
+        />
       )}
-      {/* {<QuizRezults {...results[0]} />} */}
     </SQuiz.Wrapper>
   );
 };

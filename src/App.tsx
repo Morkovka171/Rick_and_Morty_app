@@ -10,6 +10,8 @@ import Episodes from "./pages/Episodes";
 import Favorites from "./pages/Favorites";
 import Footer from "./components/Footer";
 
+
+
 const handleClick = () => {
   window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
 };

@@ -1,5 +1,5 @@
 type ResultsType = {
-    id: number;
+    id: string;
     image: string;
     name: string;
     text: string;
