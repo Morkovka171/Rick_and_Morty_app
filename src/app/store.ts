@@ -1,8 +1,9 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import filterReducer from '../components/Filters/slice';
 
 export const store = configureStore({
   reducer: {
-    
+    filter: filterReducer,
   },
 });
 

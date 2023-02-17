@@ -11,7 +11,7 @@ const List = styled.ul`
   }
 `;
 const ListItem = styled.li<{ active?: boolean }>`
-  font-family: "Nunito-SemiBold", sans-serif;
+  font-family: "Nunito-Bold", sans-serif;
   list-style: none;
   font-size: 17px;
   color: #712097;

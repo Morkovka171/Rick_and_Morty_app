@@ -14,7 +14,7 @@ const getStatusColor = (status: "Dead" | "Alive" | "unknown") => {
 };
 
 const Wrapper = styled.div`
-  padding: 5px 20px 20px 20px;
+  padding: 5px 25px 25px 25px;
   background-color: #faf6f6;
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@ const Name = styled.span`
 const Img = styled.img`
   border-radius: 10px;
   margin-bottom: 20px;
-  width: 95%;
+  width: 80%;
 `;
 
 const WrapperContent = styled.div`

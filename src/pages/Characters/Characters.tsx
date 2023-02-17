@@ -1,25 +1,40 @@
-// import axios from 'axios';
+import axios from 'axios';
 import React from "react";
 import ItemCard from "../../components/ItemCard";
-import Sort from "../../components/Sort";
+import Filters from "../../components/Filters";
 import { mockCharacters } from "../../helpers/mockCharacters";
 import CharacterType from "../../types/CharactersTypes";
 import SCharacters from "./SCharacters";
+import { useSelector } from "react-redux";
+import { RootState } from "../../app/store";
 
 const Characters = () => {
   const [characters, setCharacters] = React.useState<CharacterType[]>([]);
-
+  const filter = useSelector((state: RootState) => state.filter.filter);
+  
   React.useEffect(() => {
-    // axios
-    //   .get("https://rickandmortyapi.com/api/character")
-    //   .then((res) => console.log(res))
-    //   .catch((error) => console.log(error));
-    setCharacters(mockCharacters);
-  }, []);
+    let query = '';
+    if (Object.keys(filter).length !== 0) {
+      query = '/?';
+      for (let f in filter) {
+        if (filter[f]) {
+          query += `${f}=${filter[f]}&`
+        }
+      }
+    }
+    axios
+      .get(`https://rickandmortyapi.com/api/character${query.slice(0, -1)}`)
+      .then((res) => {
+        setCharacters(res.data.results);
+        console.log(res)
+      })
+      .catch((error) => console.log(error));
+
+  }, [filter]);
 
   return (
     <>
-      <Sort />
+      <Filters />
       <SCharacters.Wrapper>
         {characters.map((character) => (
           <>
